@@ -60,4 +60,4 @@ test dataset eval results
 | test dataset | 0.7652 | 0.9047 | 0.8487 | 0.788 | 0.909 | [link](https://drive.google.com/file/d/1BcggyQ6ZkQ7FfZNJDb29_VibWQIqQTBg/view?usp=sharing) |
 
 ## Learning outcome image
-[inmage1](./results/val_batch0_pred.jpg)
+![image1](./results/val_batch0_pred.jpg)
