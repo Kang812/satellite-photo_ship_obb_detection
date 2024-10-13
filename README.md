@@ -52,3 +52,8 @@ This process helped address the issue of small objects and improved detection pe
 ```
 ./eval.sh
 ```
+- test dataset eval results
+  - The reported performance is based on a custom split of the data (train/valid/test) rather than the competition-provided test set. The model's performance in the competition was poor due to the inability to find a suitable dataset for predicting the test set and frequent misclassification of clouds as ships. Due to time constraints and the inability to invest more time in the competition, the code will be made public midway through the event. The dataset used for training consisted of 47,835 samples in the training set, 9,269 samples in the validation set, and 846 samples in the test set.
+| dataset | mAP50-95 | mAP50 | map75 | R | P |
+| --- | --- | --- | --- | --- | --- |
+| test dataset | 0.7652 | 0.9047 | 0.8487 | 0.788 | 0.909 |
