@@ -1,5 +1,5 @@
 python train.py --model_name yolo11l-obb \
-    --dataset_yaml /workspace/oriented_dota/DOTA3.yaml \
+    --dataset_yaml /workspace/oriented_dota/DOTA.yaml \
     --epochs 100 \
     --batch 16 \
     --imgsz 640 \
