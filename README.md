@@ -11,7 +11,8 @@
 - [AIHub](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=73)
 - [Kaggle Airbus Ship Detection Challenge](https://www.kaggle.com/competitions/airbus-ship-detection)
 - [ShipRSImageNet](https://github.com/zzndream/ShipRSImageNet)
-
+- [roboflow](https://universe.roboflow.com/marta-capito/airbus-ship-detection-5kzoi)
+  
 ## utils
 - ai_hub_yolo_convert.py : Code to convert AI HUB data to YOLO format
 - ship_dataset_yolo_convert.py : Code to convert ShipRSImageNet data to yolo format
@@ -24,5 +25,25 @@
 - slide_window.py : Code to infer large resolution images with a sliding window approach
 - zoom_out.py : Code to apply zoom out to training data only
 
-## How to learn 
+## How to learn
 
+Here's a structured description of your process:
+
+1. **Data Preparation**:
+   - Initially, you converted datasets (excluding Roboflow) into the YOLO format for model training.
+   - After training, you used the trained model for auto-labeling on the Roboflow dataset.
+   - Additionally, you labeled a dataset using Labelme, converted it into the YOLO format, and performed further model training.
+
+2. **Zoom-out Augmentation**:
+   - You applied zoom-out augmentation only to the training set. This was necessary because, during testing, objects were too small due to cropping. 
+   - The zoom-out process was performed with a scale value of 0.3 to allow for multi-scale training.
+
+3. **Inference**:
+   - To handle high-resolution images (10980 x 10980), you employed a sliding window approach during inference. This method allows the model to process large images by dividing them into smaller overlapping segments.
+
+This process helped address the issue of small objects and improved detection performance on the target dataset.
+
+## Train
+'''
+./train.sh
+'''
