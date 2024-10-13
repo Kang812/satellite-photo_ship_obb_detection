@@ -43,7 +43,12 @@ Here's a structured description of your process:
 
 This process helped address the issue of small objects and improved detection performance on the target dataset.
 
-## Train
-'''
+## model train
+```
 ./train.sh
-'''
+```
+
+## model eval
+```
+./eval.sh
+```
