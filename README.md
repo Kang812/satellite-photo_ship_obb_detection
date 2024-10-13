@@ -61,3 +61,5 @@ test dataset eval results
 
 ## Learning outcome image
 ![image1](./results/val_batch0_pred.jpg)
+![image2](./results/val_batch1_pred.jpg)
+![image3](./results/val_batch2_pred.jpg)
