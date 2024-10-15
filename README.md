@@ -43,6 +43,13 @@ Here's a structured description of your process:
 
 This process helped address the issue of small objects and improved detection performance on the target dataset.
 
+## Main Library Installation
+- pytorch uses version 2.4.1
+```
+pip install -r requirements.txt
+```
+
+
 ## model train
 ```
 ./train.sh
